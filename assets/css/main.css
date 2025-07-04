@@ -1,0 +1,33 @@
+---
+---
+
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif:wght@700&display=swap";
+
+@import "tailwindcss";
+
+li {
+    @apply list-inside;
+}
+
+.container {
+    @apply mx-auto;
+    max-width: 84ch;
+}
+
+a {
+    @apply underline;
+}
+
+main li {
+    @apply list-disc;
+}
+
+body {
+    @apply font-sans text-base text-gray-900 bg-white;
+    font-family: "Inter", "Helvetica", sans-serif;
+}
+
+h1 {
+    @apply text-2xl font-bold mb-4;
+    font-family: "Noto Serif", "Times New Roman", serif;
+}

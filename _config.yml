@@ -1,0 +1,8 @@
+url: "https://felixleitner.com"
+title: "Felix Leitner"
+
+plugins:
+  - jekyll-postcss-v2
+
+postcss:
+  cache: false
