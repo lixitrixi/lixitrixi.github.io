@@ -6,3 +6,9 @@ plugins:
 
 postcss:
   cache: false
+
+collections_dir: _collections
+
+collections:
+  skills:
+    output: false
