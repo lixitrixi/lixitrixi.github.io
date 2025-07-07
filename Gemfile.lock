@@ -80,6 +80,9 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-esbuild (0.1.1)
+      jekyll (>= 3.0)
+      open3
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-watch (2.2.1)
@@ -94,6 +97,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    open3 (0.2.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.2)
@@ -164,6 +168,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-esbuild
   jekyll-postcss-v2!
   webrick
 

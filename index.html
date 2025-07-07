@@ -2,45 +2,73 @@
 layout: default
 title: Home
 ---
-
 <section>
-    <h1>Hi, I'm Felix!</h1>
+  <h1>Hi, I'm Felix!</h1>
 
-    <p class="mb-4">I’m a software developer studying at the <a href="https://www.st-andrews.ac.uk/" target="_blank">University of St Andrews</a> in Scotland. I’m interested in many different areas of CS, especially algorithms and full-stack web design/development.</p>
+  <p class="mb-4">
+    I’m a software developer studying at the
+    <a href="https://www.st-andrews.ac.uk/" target="_blank">University of St Andrews</a>
+    in Scotland. I’m interested in many different areas of CS, especially algorithms and full-stack web
+    design/development.
+  </p>
 
-    <p class="mb-4">I'm currently interning at <a href="https://www.mathworks.com/" target="_blank">MathWorks</a> in Cambridge, England, working on software and platform testing. I previously interned at <a href="https://www.savant.com" target="_blank">Savant Systems</a> and <a href="https://www.trackx.tech/" target="_blank">TrackX Technology</a>; for more details see my <a href="/resume.pdf">résumé</a>.</p>
+  <p class="mb-4">
+    I'm currently interning at
+    <a href="https://www.mathworks.com/" target="_blank">MathWorks</a> in Cambridge, England, working on software and
+    platform testing. I previously interned at <a href="https://www.savant.com" target="_blank">Savant Systems</a> and
+    <a href="https://www.trackx.tech/" target="_blank">TrackX Technology</a>; for more details see my
+    <a href="/resume.pdf">résumé</a>.
+  </p>
 
-    <p class="mb-4">I enjoy maintaining and contributing to open-source projects, both in my free time and as part of my degree:</p>
+  <p class="mb-4">
+    I enjoy maintaining and contributing to open-source projects, both in my free time and as part of my degree:
+  </p>
 
-    <ul>
-        <li><a href="https://github.com/conjure-cp" target="_blank">Conjure</a> - A research project focused on automated decision making and problem solving.</li>
-        <li><a href="https://github.com/conjure-cp/uniplate" target="_blank">Uniplate</a> - A Rust library for manipulating tree-like structures.</li>
-    </ul>
+  <ul>
+    <li>
+      <a href="https://github.com/conjure-cp" target="_blank">Conjure</a> - A research project focused on automated
+      decision making and problem solving.
+    </li>
+    <li>
+      <a href="https://github.com/conjure-cp/uniplate" target="_blank">Uniplate</a>
+      - A Rust library for manipulating tree-like structures.
+    </li>
+  </ul>
 </section>
 
 <div class="flex justify-end">
-    <img class="h-16" src="/assets/img/running_blob.png" alt="A running fluffy blob with a single eye.">
+  <img
+    class="h-16"
+    src="/assets/img/running_blob.png"
+    alt="A running fluffy blob with a single eye."
+  >
 </div>
 
 <section>
-    <h1>My Skills</h1>
+  <h1>My Skills</h1>
 
-    {% assign skills = site.skills | where_exp: "skill", "skill.unlisted != true" | sort: "order", "last" %}
-    {% assign size = skills | size %}
-    {% assign half = size | divided_by: 2 %}
-    {% assign first_half = skills | slice: 0, half %}
-    {% assign second_half = skills | slice: half, size %}
+  {% assign skills = site.skills | where_exp: 'skill', 'skill.unlisted != true' | sort: 'order', 'last' %}
+  {% assign size = skills | size %}
+  {% assign half = size | divided_by: 2 %}
+  {% assign first_half = skills | slice: 0, half %}
+  {% assign second_half = skills | slice: half, size %}
 
-    <div class="flex gap-4 flex-wrap">
-        <div class="flex flex-col gap-4 min-w-[30ch] flex-grow">
-            {% for skill in first_half %}
-                {% include skill_card.html name=skill.name content=skill.content %}
-            {% endfor %}
-        </div>
-        <div class="flex flex-col gap-4 min-w-[30ch] flex-grow">
-            {% for skill in second_half %}
-                {% include skill_card.html name=skill.name content=skill.content %}
-            {% endfor %}
-        </div>
+  <div class="flex gap-4 flex-wrap">
+    <div class="flex flex-col gap-4 flex-grow basis-0">
+      {% for skill in first_half %}
+        {%
+          include skill_card.html name=skill.name
+          content=skill.content
+        %}
+      {% endfor %}
     </div>
+    <div class="flex flex-col gap-4 flex-grow basis-0">
+      {% for skill in second_half %}
+        {%
+          include skill_card.html name=skill.name
+          content=skill.content
+        %}
+      {% endfor %}
+    </div>
+  </div>
 </section>

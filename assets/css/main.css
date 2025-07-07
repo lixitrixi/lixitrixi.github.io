@@ -35,3 +35,7 @@ h1 {
     @apply text-2xl font-bold mb-4;
     font-family: "Noto Serif", "Times New Roman", serif;
 }
+
+h2 {
+    @apply text-lg font-bold;
+}

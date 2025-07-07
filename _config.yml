@@ -12,3 +12,10 @@ collections_dir: _collections
 collections:
   skills:
     output: false
+
+esbuild:
+  bundle: true
+  minify: environment
+  sourcemap: environment
+  files:
+    - /assets/js/main.js
