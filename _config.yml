@@ -12,6 +12,16 @@ collections_dir: _collections
 collections:
   skills:
     output: false
+  projects:
+    output: true
+    permalink: /projects/:slug
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 esbuild:
   bundle: true

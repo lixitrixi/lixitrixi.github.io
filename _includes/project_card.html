@@ -1,0 +1,11 @@
+<a href="{{ project.url }}" class="border border-gray-200 px-6 py-4 rounded-lg cursor-pointer no-underline">
+  <h2>
+    {{ project.title }}
+    {% if project.description %} - {{ project.description }}{% endif %}
+  </h2>
+  <div class="flex gap-2 mt-2">
+    {% for tag in project.tags %}
+      {% include tag.html name=tag %}
+    {% endfor %}
+  </div>
+</a>

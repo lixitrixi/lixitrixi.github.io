@@ -2,5 +2,5 @@
 name: Software Testing
 order: 5
 ---
-- Integration test specification
+- Integration tests
 - Test-driven development

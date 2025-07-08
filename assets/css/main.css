@@ -18,7 +18,8 @@ section {
     @apply my-8;
 }
 
-a {
+/* Apply underline only to text links */
+a:not(:has(> *)) {
     @apply underline;
 }
 
@@ -37,5 +38,5 @@ h1 {
 }
 
 h2 {
-    @apply text-lg font-bold;
+    @apply font-bold;
 }

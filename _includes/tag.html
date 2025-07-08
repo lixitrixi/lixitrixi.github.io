@@ -1,0 +1,8 @@
+<!-- If tag exists, use its color, otherwise gray -->
+{% assign color = site.data.tag_colors[include.name] | default: 'bg-gray-200' %}
+
+<div class="px-2 {{ color }} rounded-full">
+  <p class="text-sm">
+    {{ include.name }}
+  </p>
+</div>
