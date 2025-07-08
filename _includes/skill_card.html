@@ -1,9 +1,16 @@
 <div
   x-data="{ open: false }"
-  class="min-w-[24ch] border border-gray-200 px-6 py-4 rounded-lg cursor-pointer"
+  class="min-w-[24ch] border border-gray-200 px-6 py-4 rounded-lg cursor-pointer hover:border-gray-300"
   @click="open = !open"
 >
-  <h2>{{ include.name }}</h2>
+  <div class="flex gap-4 items-center">
+    <img
+      src="/assets/img/caret.svg"
+      class="w-4 h-4 transition-transform duration-200 ease-linear"
+      x-bind:class="{ 'rotate-90': open }"
+    >
+    <h2>{{ include.name }}</h2>
+  </div>
   <div x-show="open" x-collapse class="mt-2">
     <p>{{ include.content }}</p>
   </div>
