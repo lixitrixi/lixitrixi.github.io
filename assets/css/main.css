@@ -4,6 +4,7 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif:wght@700&display=swap";
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 li {
     @apply list-inside;
@@ -21,10 +22,6 @@ section {
 /* Apply underline only to text links */
 a:not(:has(> *)) {
     @apply underline;
-}
-
-a {
-    @apply hover:bg-gray-100 transition-colors duration-100;
 }
 
 main li {

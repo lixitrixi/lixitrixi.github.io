@@ -2,9 +2,10 @@
 title: Singularity Solutions
 description: My first web page
 tools: HTML, CSS
-timeframe: Jan 2021
+date: 2021-01-01
 link: http://felixleitner.com/singularity/
 source: https://github.com/lixitrixi/singularity
+unlisted: true
 ---
 Singularity Solutions was my first web design project, completed for a school English project. Instead of using web design tools like Wix or Weebly like the rest of my class, I decided to test my skills and built a site from scratch.
 

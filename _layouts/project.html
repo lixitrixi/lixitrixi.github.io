@@ -2,13 +2,51 @@
 layout: default
 title: "{{ page.title }}"
 ---
-
 <section>
   <a href="/projects">← Back to projects</a>
 </section>
 
 <section>
-  <h1>{{ page.title }}</h1>
+  <h1 class="!mb-2">{{ page.title }}</h1>
+  <p class="italic">{{ page.description }}</p>
+
+  <div class="flex gap-2 my-2">
+    {% for tag in page.tags %}
+      {% include tag.html name=tag %}
+    {% endfor %}
+  </div>
 </section>
 
-{{ content }}
+<section>
+  <p class="text-slate-500">
+    {% if page.date_start and page.date_end %}
+      {% if page.date_start == page.date_end %}
+        {{ page.date_start | date: '%B %Y' }}
+      {% else %}
+        {% assign start_month_year = page.date_start | date: '%B %Y' %}
+        {% assign end_month_year = page.date_end | date: '%B %Y' %}
+        {% if start_month_year == end_month_year %}
+          {{ start_month_year }}
+        {% else %}
+          {{ page.date_start | date: '%B %Y' }} - {{ page.date_end | date: '%B %Y' }}
+        {% endif %}
+      {% endif %}
+    {% elsif page.date %}
+      {{ page.date | date: '%B %Y' }}
+    {% endif %}
+  </p>
+  {% if page.source %}
+    <p>
+      <span class="font-bold">Source:</span> <a href="{{ page.source }}" target="_blank">{{ page.source }}</a>
+    </p>
+  {% endif %}
+  {% if page.report %}
+    <p>
+      <span class="font-bold">Report:</span> <a href="{{ page.report }}" target="_blank">{{ page.report }}</a>
+    </p>
+  {% endif %}
+</section>
+
+<section class="my-4 prose prose-slate max-w-none">
+  {{ content }}
+</section>

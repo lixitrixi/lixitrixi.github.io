@@ -81,11 +81,16 @@ title: Home
 
 <section>
   <h1>Featured Projects</h1>
-  <p class="mb-4">Here are a few highlights from my journey as a developer.</p>
+  <p class="mb-4">
+    Here are a few highlights from my journey as a developer.
+    <a href="/projects/" class="ml-auto"> See more... </a>
+  </p>
 
   {% assign projects = site.projects
     | where_exp: 'project', 'project.unlisted != true'
     | where_exp: 'project', 'project.featured == true'
+    | sort: 'date_end', 'last'
+    | reverse
   %}
   <div class="flex flex-col gap-4">
     {% for project in projects %}

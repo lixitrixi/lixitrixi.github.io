@@ -1,10 +1,10 @@
 ---
 title: Ropes
 description: A 2D physics simulation
-tools: Pygame
-timeframe: Aug 2021
+date: 2021-08-01
 source: https://github.com/lixitrixi/ropes
 featured: true
+tags: personal games physics
 ---
 Ropes is a simple physics simulation I created in Pygame with inspiration from the game [Polybridge](https://polybridgegame.com/) and a video by YouTuber [Sebastian Lague](https://www.youtube.com/c/SebastianLague). It uses two simple objects - a node and a stick - to create complex movement.
 

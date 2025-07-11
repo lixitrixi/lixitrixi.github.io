@@ -1,8 +1,9 @@
 ---
 title: Loft.design
-tools: Webflow, JavaScript, CSS
-timeframe: Sep 2022 - Present
+date_start: 2022-09-01
+date_end: 2025-07-01
 site: https://loft.design
+unlisted: true
 ---
 Alongside my University studies I have been working part-time for [Loft Design](https://loft.design), a Providence-based design firm. My main role at the company has been to maintain their website through Webflow, turning ideas from the designers into working web pages.
 
