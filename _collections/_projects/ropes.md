@@ -1,7 +1,8 @@
 ---
 title: Ropes
-description: A 2D physics simulation
-date: 2021-08-01
+description: A 2D sticks-and-nodes physics simulation
+date_start: 2021-08-01
+date_end: 2021-08-01
 source: https://github.com/lixitrixi/ropes
 featured: true
 tags: personal games physics

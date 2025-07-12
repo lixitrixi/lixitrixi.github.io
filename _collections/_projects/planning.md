@@ -1,7 +1,8 @@
 ---
 title: Planning
 description: A Rust library for generic action planning
-date: 2024-08-01
+date_start: 2024-08-01
+date_end: 2024-08-01
 source: https://github.com/lixitrixi/planning
 tags: ai personal rust library
 ---

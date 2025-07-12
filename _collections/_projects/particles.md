@@ -1,6 +1,7 @@
 ---
 title: Particle Masks
-date: 2022-05-01
+date_start: 2022-05-01
+date_end: 2022-05-01
 source: https://github.com/lixitrixi/particle-masks
 tags: graphics simulation python
 ---

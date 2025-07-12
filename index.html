@@ -89,7 +89,7 @@ title: Home
   {% assign projects = site.projects
     | where_exp: 'project', 'project.unlisted != true'
     | where_exp: 'project', 'project.featured == true'
-    | sort: 'date_end', 'last'
+    | sort: 'date_end', 'first'
     | reverse
   %}
   <div class="flex flex-col gap-4">
