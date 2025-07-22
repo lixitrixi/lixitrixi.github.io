@@ -2,7 +2,7 @@
 title: Conjure
 description: The constraint programming ecosystem
 date_start: 2023-09-01
-date_end: 2024-04-01
+date_end: 2025-06-01
 source: https://github.com/conjure-cp
 report: https://www.overleaf.com/read/rwrckzhfqwbg#e0391f
 featured: true
