@@ -1,6 +1,7 @@
 ---
 name: Software Testing
-order: 5
+order: 6
+unlisted: true
 ---
-- Integration tests
+- Integration & unit testing
 - Test-driven development

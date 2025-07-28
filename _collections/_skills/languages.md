@@ -1,7 +1,7 @@
 ---
-name: Languages
-order: 6
+name: Programming Languages
+order: 3
 ---
-- Rust, Haskell
-- C, C#, Java
-- Python, Javascript
+- Rust, C, Haskell
+- C#, Java
+- Python, JS

@@ -7,11 +7,11 @@ source: https://github.com/lixitrixi/arpeggio
 featured: true
 tags: backend personal python
 ---
-Arpeggio is an automated Discord user account ("bot") that plays audio tracks and music in voice channels. It was my first larger project that I saw through to completion, and was also my first introduction to talking with other developers online.
-
-My first version of Arpeggio was a few files that I copied to and ran on a GCP machine. It taught me a lot about Python libraries as well as how web servers actually work. I then moved it to the web server that hosted my website and continuously updated and maintained it, seeing it grow from a handful of Discord servers with my friends to <b>52</b> servers today! It supports SoundCloud and Spotify as well as YouTube playback.
+Arpeggio was a custom Discord music bot and my first large-scale personal project that I carried through to completion. It played audio tracks in voice channels and supported playback from YouTube, SoundCloud, and Spotify. More than just a technical milestone, Arpeggio also marked my first experience engaging with other developers online.
 
 <img src="/assets/img/arpy.png">
 <figcaption>A demonstration of Apreggio's functionality: joining, playback, and track queueing</figcaption>
 
-Although Arpeggio is no longer online, the project taught me a lot about effective project management and the technical side of the Internet. Seeing all of my friends use it regularly like they would a more popular music bot was very rewarding and whet my appetite for online projects.
+The initial version was a simple set of Python scripts deployed to a Google Cloud VM, which helped me understand how Python libraries and web servers worked in practice. Later, I migrated the project to the same web server that hosted my personal website, where I actively maintained and improved it. Over time, Arpeggio expanded from a few friends’ servers to over 50 active Discord servers.
+
+Though Arpeggio is no longer running, it was a formative project that taught me valuable lessons in project management, server deployment, and real-world API integration. Seeing friends regularly use it as they would a mainstream music bot made the effort deeply rewarding and sparked my long-term interest in building networked applications.

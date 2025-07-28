@@ -1,7 +1,6 @@
 ---
-name: Artificial Intelligence
+name: Symbolic AI
 order: 1
 ---
 - Constraint programming
-- Optimal strategy search algorithms
-- Video game agent behaviour
+- Graph search/transformation algorithms

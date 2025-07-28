@@ -1,7 +1,7 @@
 ---
 name: Front-End Design/Development
-order: 2
+order: 4
 ---
-- Angular, React, jQuery
-- Sass, Pug/Jade
+- Angular, React
+- Bootstrap, TailwindCSS
 - Figma, Webflow, Jekyll

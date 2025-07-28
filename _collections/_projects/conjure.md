@@ -6,10 +6,19 @@ date_end: 2025-06-01
 source: https://github.com/conjure-cp
 report: https://www.overleaf.com/read/rwrckzhfqwbg#e0391f
 featured: true
-tags: ai swe research rust frontend
+tags: ai languages swe research rust frontend
 ---
-Conjure is an application which allows specifying complex computational problems in a natural language and quickly solving them using various methods and techniques. It's been maintained for nearly a decade by several professors and PhD/Masters students at the [University of St Andrews](https://www.st-andrews.ac.uk/), and was opened up as a [Vertically Integrated Project (VIP)](https://www.st-andrews.ac.uk/education/vip/) in 2023.
+As part of the AI for Decision-Making Vertically Integrated Project (VIP) at the University of St Andrews, I worked on the Conjure ecosystem—an open-source toolchain for modeling and solving constraint problems. My contributions centered on the design and implementation of Conjure Oxide, a Rust-based tool for rewriting a high-level specification language for multiple solver backends.
 
-I worked as part of a 7-person team on various projects within the Conjure "ecosystem" during my two semesters on the VIP. My time on the project saw me writing tons of code in a newly-learned language (Rust), regularly presenting my ideas and progress to the larger team, writing [documentation for the engine](https://github.com/conjure-cp/conjure-oxide/wiki/Semantics-of-Rewriting-Expressions-with-Side%E2%80%90Effects), and learning a lot about Constraint Programming and AST expression semantics.
+Over two semesters, I implemented and extended key systems including:
 
-My end-of-semester report listing my contributions is available [here](https://www.overleaf.com/read/rwrckzhfqwbg#e0391f).
+- A modular rule registry and rewriting engine, enabling scalable rule management with runtime control.
+- Constant, type, and bound evaluation for expressions to support efficient model simplification.
+- A formal system for handling reduction side effects, including undefined expressions and auxiliary constraints.
+- A front-end JavaScript client for Conjure-as-a-Service, simplifying web integration and solution polling.
+
+In addition to my individual development work, I collaborated closely with other developers, contributed to internal documentation, and helped debug and onboard new team members. I now volunteer as a mentor for new contributors, offering technical support and guidance to those working on Conjure Oxide and related tools.
+
+This project significantly deepened my understanding of constraint programming, expression semantics, and rewriting systems, while also giving me experience in collaborative development using a modern language and development tools.
+
+A full report of my second semester on the project is available [here](https://www.overleaf.com/read/rwrckzhfqwbg#e0391f).

@@ -1,6 +1,7 @@
 ---
 name: Software Engineering
-order: 3
+order: 2
 ---
-- Git, Azure, GitLab
+- Git, Perforce
 - Docker, Kubernetes
+- Scrum / Agile

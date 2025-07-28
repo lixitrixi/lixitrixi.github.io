@@ -1,7 +1,7 @@
 ---
 name: Back-End Development
-order: 4
+order: 5
 ---
-- Node.js, Express, Flask, nginx
-- Unix web server setup for static sites
-- Dynamic web app backends and APIs
+- NodeJS, Express, Flask
+- RESTful APIs
+- nginx, SSL setup
