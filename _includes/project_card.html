@@ -6,7 +6,7 @@
     {{ project.title }}
     {% if project.description %} - {{ project.description }}{% endif %}
   </h2>
-  <div class="flex gap-2 mt-2">
+  <div class="flex gap-2 flex-wrap mt-2">
     {% for tag in project.tags %}
       {% include tag.html name=tag %}
     {% endfor %}
