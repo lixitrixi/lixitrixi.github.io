@@ -15,6 +15,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:slug
+  haiku:
+    output: true
+    permalink: /haiku/:slug
 
 defaults:
   - scope:
@@ -22,6 +25,11 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  - scope:
+      path: ""
+      type: "haiku"
+    values:
+      layout: "haiku"
 
 esbuild:
   bundle: true
