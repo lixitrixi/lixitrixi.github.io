@@ -16,7 +16,7 @@ li {
 }
 
 section {
-    @apply my-8;
+    @apply mt-8;
 }
 
 /* Apply underline only to text links */
