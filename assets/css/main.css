@@ -29,7 +29,7 @@ main li {
 }
 
 body {
-    @apply font-sans text-base text-gray-900 bg-white;
+    @apply font-sans text-base text-gray-900 bg-[#fafafa];
     font-family: "Inter", "Helvetica", sans-serif;
 }
 
@@ -40,4 +40,12 @@ h1 {
 
 h2 {
     @apply font-bold;
+}
+
+.skill-card:hover .caret {
+    @apply text-gray-400;
+}
+
+.card {
+    @apply bg-white rounded-lg border border-gray-300 hover:border-gray-400;
 }
