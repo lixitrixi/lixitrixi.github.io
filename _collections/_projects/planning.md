@@ -4,7 +4,7 @@ description: A Rust library for generic action planning
 date_start: 2024-08-01
 date_end: 2024-08-01
 source: https://github.com/lixitrixi/planning
-tags: ai personal rust library
+tags: ai rust personal library
 ---
 `Planning` is an open-source Rust library used to plan efficient sequences of actions to reach user-specified goal states. This seems pretty vague, but the strength of the library is its very general nature!
 

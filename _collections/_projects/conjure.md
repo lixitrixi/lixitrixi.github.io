@@ -6,7 +6,7 @@ date_end: 2025-06-01
 source: https://github.com/conjure-cp
 report: https://www.overleaf.com/read/rwrckzhfqwbg#e0391f
 featured: true
-tags: ai languages swe research rust frontend
+tags: ai languages swe rust research frontend
 ---
 As part of the AI for Decision-Making Vertically Integrated Project (VIP) at the University of St Andrews, I worked on the Conjure ecosystem—an open-source toolchain for modeling and solving constraint problems. My contributions centered on the design and implementation of Conjure Oxide, a Rust-based tool for rewriting a high-level specification language for multiple solver backends.
 
