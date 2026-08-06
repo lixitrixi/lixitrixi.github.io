@@ -1,4 +1,5 @@
-ai: bg-red-200
+ai: bg-yellow-200
 backend: bg-blue-200
 swe: bg-green-200
 languages: bg-purple-200
+rust: bg-red-200
