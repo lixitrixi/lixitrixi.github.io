@@ -2,101 +2,98 @@
 layout: default
 title: Home
 ---
-<section>
-  <h1>Hi, I'm Felix!</h1>
 
-  <p class="mb-4">
-    I’m a software developer studying at the
-    <a href="https://www.st-andrews.ac.uk/" target="_blank">University of St Andrews</a>
-    in Scotland. I’m interested in many different areas of CS, especially algorithms and languages.
-  </p>
+<div class="flex flex-col gap-8">
+  <section>
+    <h1>Hi, I'm Felix!</h1>
 
-  <p class="mb-4">
-    I'm currently working on a Master's in CS, focusing on an area of symbolic AI called Constraint Programming. I've
-    previously interned at <a href="https://www.mathworks.com/" target="_blank">MathWorks</a>,
-    <a href="https://www.savant.com" target="_blank">Savant Systems</a> and
-    <a href="https://www.trackx.tech/" target="_blank">TrackX Technology</a>. For more details see my
-    <a href="/resume.pdf">résumé</a>!
-  </p>
+    <p class="mb-4">
+      I’m a software developer studying at the
+      <a href="https://www.st-andrews.ac.uk/" target="_blank"
+        >University of St Andrews</a
+      >
+      in Scotland. I’m interested in many different areas of CS, especially
+      algorithms and languages.
+    </p>
 
-  <p class="mb-4">
-    I enjoy maintaining and contributing to open-source projects, both in my free time and as part of my degree:
-  </p>
+    <p class="mb-4">
+      I'm currently working on a Master's in CS, focusing on an area of symbolic
+      AI called Constraint Programming. I've previously interned at
+      <a href="https://www.mathworks.com/" target="_blank">MathWorks</a>,
+      <a href="https://www.savant.com" target="_blank">Savant Systems</a> and
+      <a href="https://www.trackx.tech/" target="_blank">TrackX Technology</a>.
+      For more details see my <a href="/resume.pdf">résumé</a>!
+    </p>
 
-  <ul>
-    <li>
-      <a href="https://github.com/conjure-cp" target="_blank">Conjure</a> - A research project focused on automated
-      decision making and problem solving.
-    </li>
-    <li>
-      <a href="https://github.com/conjure-cp/uniplate" target="_blank">Uniplate</a>
-      - A Rust library for manipulating tree-like structures.
-    </li>
-  </ul>
-</section>
+    <p class="mb-4">
+      I enjoy maintaining and contributing to open-source projects, both in my
+      free time and as part of my degree:
+    </p>
 
-<section>
-  <img
-    class="h-16 ml-auto"
-    src="/assets/img/running_blob.png"
-    alt="A running fluffy blob with a single eye."
-  >
-</section>
+    <ul>
+      <li>
+        <a href="https://github.com/conjure-cp" target="_blank">Conjure</a> - A
+        research project focused on automated decision making and problem
+        solving.
+      </li>
+      <li>
+        <a href="https://github.com/conjure-cp/uniplate" target="_blank"
+          >Uniplate</a
+        >
+        - A Rust library for manipulating tree-like structures.
+      </li>
+    </ul>
+  </section>
 
-<section>
-  <h1>My Skills</h1>
+  <section>
+    <img
+      class="h-16 ml-auto"
+      src="/assets/img/running_blob.png"
+      alt="A running fluffy blob with a single eye."
+    />
+  </section>
 
-  {% assign skills = site.skills | where_exp: 'skill', 'skill.unlisted != true' | sort: 'order', 'last' %}
-  {% assign size = skills | size %}
-  {% assign half = size | divided_by: 2 %}
-  {% assign first_half = skills | slice: 0, half %}
-  {% assign second_half = skills | slice: half, size %}
+  <section>
+    <h1>My Skills</h1>
 
-  <div class="flex gap-4 flex-wrap">
-    <div class="flex flex-col gap-4 flex-grow basis-0">
-      {% for skill in first_half %}
-        {%
-          include skill_card.html name=skill.name
-          content=skill.content
-        %}
-      {% endfor %}
+    {% assign skills = site.skills | where_exp: 'skill', 'skill.unlisted !=
+    true' | sort: 'order', 'last' %} {% assign size = skills | size %} {% assign
+    half = size | divided_by: 2 %} {% assign first_half = skills | slice: 0,
+    half %} {% assign second_half = skills | slice: half, size %}
+
+    <div class="flex gap-4 flex-wrap">
+      <div class="flex flex-col gap-4 flex-grow basis-0">
+        {% for skill in first_half %} {% include skill_card.html name=skill.name
+        content=skill.content %} {% endfor %}
+      </div>
+      <div class="flex flex-col gap-4 flex-grow basis-0">
+        {% for skill in second_half %} {% include skill_card.html
+        name=skill.name content=skill.content %} {% endfor %}
+      </div>
     </div>
-    <div class="flex flex-col gap-4 flex-grow basis-0">
-      {% for skill in second_half %}
-        {%
-          include skill_card.html name=skill.name
-          content=skill.content
-        %}
-      {% endfor %}
+  </section>
+
+  <section>
+    <img
+      src="/assets/img/painting_blob.png"
+      alt="A round floating blob with horns painting a line across the page."
+      class="h-20"
+    />
+  </section>
+
+  <section>
+    <h1>Featured Projects</h1>
+    <p class="mb-4">
+      Here are a few highlights from my journey as a developer.
+      <a href="/projects" class="ml-auto"> See more... </a>
+    </p>
+
+    {% assign projects = site.projects | where_exp: 'project', 'project.unlisted
+    != true' | where_exp: 'project', 'project.featured == true' | sort:
+    'date_end', 'first' | reverse %}
+    <div class="flex flex-col gap-4">
+      {% for project in projects %} {% include project_card.html project=project
+      %} {% endfor %}
     </div>
-  </div>
-</section>
-
-<section>
-  <img
-    src="/assets/img/painting_blob.png"
-    alt="A round floating blob with horns painting a line across the page."
-    class="h-20"
-  >
-</section>
-
-<section>
-  <h1>Featured Projects</h1>
-  <p class="mb-4">
-    Here are a few highlights from my journey as a developer.
-    <a href="/projects" class="ml-auto"> See more... </a>
-  </p>
-
-  {% assign projects = site.projects
-    | where_exp: 'project', 'project.unlisted
-  != true'
-    | where_exp: 'project', 'project.featured == true'
-    | sort: 'date_end', 'first'
-    | reverse
-  %}
-  <div class="flex flex-col gap-4">
-    {% for project in projects %}
-      {% include project_card.html project=project %}
-    {% endfor %}
-  </div>
-</section>
+  </section>
+</div>

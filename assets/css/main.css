@@ -15,10 +15,6 @@ li {
     max-width: 84ch;
 }
 
-section {
-    @apply mt-8;
-}
-
 /* Apply underline only to text links */
 a:not(:has(> *)) {
     @apply underline;

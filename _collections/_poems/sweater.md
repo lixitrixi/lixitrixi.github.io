@@ -1,6 +1,8 @@
 ---
 date: 2026-4-14
+content-class: text-center
 ---
+
 Walking in the sun
 
 I feel my mother's embrace
